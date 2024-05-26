@@ -1,2 +1,2 @@
 # React-home
-  {/*"homepage": "http://Farru-khan.github.io/react-navbar",*/}
+{Personal Practising Projects Of React-Js}
