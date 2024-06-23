@@ -1,0 +1,58 @@
+.title{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions{
+    margin-top: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25rem;
+    width: 100%;
+}
+.no{
+    display: none;
+    }
+.ans{
+    margin-top: 1%;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.none{
+    display: none;
+}
+.click{
+    background-color: rgb(76, 7, 204);
+    color: white;
+    padding: 8px 8px;
+    transform: .3s;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.butts{
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.btn-2{
+    background-color: red;
+    color: white;
+    padding: 8px 8px;
+    width: 5rem;
+    border: none;
+    outline: none;
+}
+.butts span{
+color: rgb(12, 167, 102);
+}
