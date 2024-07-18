@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+    color:black;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 16px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .inactiveLink {
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  .custom-app {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .custom-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a0cad;
+    margin-bottom: 24px;
+  }
+  
+  .custom-items {
+    display: grid;
+    row-gap: 16px;
+  }
+  
+  .custom-post {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 16px;
+    display: grid;
+    row-gap: 8px;
+  }
+  
+  .custom-post__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .custom-post__metadata {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .custom-loading {
+    color: #4d4d4d;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .custom-load-more-button {
+    background-color: rgb(50, 6, 90);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 8px 12px;
+  }
+  .custom-load-more-button:hover{
+    background-color: rgb(7, 192, 121);
+    transition: .4s;
+  }
+  .custom-load-more-button:not(:disabled) {
+    cursor: pointer;
+  }
+  
+  .custom-load-more-button:hover {
+    background-color: #e65c00;
+  }
+  
+  .loading {
+    opacity: 0.6;
+  }
