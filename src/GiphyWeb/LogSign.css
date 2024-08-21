@@ -1,0 +1,63 @@
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.login{
+    margin-top: 1rem;
+    width: 50%;
+    margin-left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: linear-gradient(rgb(4, 194, 131),rgb(250, 2, 43), rgb(94, 5, 197));
+}
+.sec-1{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    color: rgb(8, 167, 106);
+}
+.box{
+    display: flex;    
+    flex-direction: column;
+}
+.sec-2{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(71, 14, 175);
+    color: rgb(10, 155, 107);
+}
+.sec-1 button{
+    background-color: rgb(3, 175, 109);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+/*
+.sec-2 button{
+    background-color: rgb(8, 167, 106);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+*/
+.box p{
+    color: red;
+}
