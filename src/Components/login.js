@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './LogSign.css'
+import './Login.css'
 import { Link, useNavigate } from 'react-router-dom'
-function Signup() {
+function Login() {
     const [email, Setemail] = useState('')
     const [pass, Setpass] = useState('')
     const [message, Setmess] = useState({})
@@ -26,11 +26,10 @@ function Signup() {
            Setmess(errors)
             if(Object.keys(errors).length===0){
                  data = {email,pass}
-                localStorage.setItem('data', JSON.stringify({...data}))
+                localStorage.setItem('recipeuser', JSON.stringify({...data}))
                 navigate('/Favourites')            
                 alert('Login sucessful')
                 console.log(data);
-                
             }
         }
   return (
@@ -53,17 +52,17 @@ function Signup() {
                  onChange={(e)=>Setpass(e.target.value)}></input>
                    {message.passw && <p>{message.passw}</p>}
             </div>
-            <button>Signup</button>
+            <button>Login</button>
         </div>
         </form>
         <div className='sec-2'>
-            <h3>Welcome To GIPHIYZ</h3>
-            <h5>Explore the Gifs, Sticker, Clips and much more</h5>
+            <h3>Welcome To Foodzy</h3>
+            <h5>Explore the Veg, Non-Veg, Desert and much more</h5>
+            <button onClick={()=>navigate('/')}>Recipes</button>
         </div>
         </div> 
     </>
   )
 }
 
-export default Signup
-
+export default Login

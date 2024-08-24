@@ -2,19 +2,20 @@ import React, { useState } from 'react'
 import './Nav.css'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 const Nav = () => {
-  const auth = JSON.parse(localStorage.getItem('data'))
+  const auth = JSON.parse(localStorage.getItem('recipeuser'))
   const navigate = useNavigate()
-  const [menuOpen,setMenuOpen] = useState(false)
+ 
   const Exit =()=>{
     if(auth){
-    localStorage.removeItem('data')
+    localStorage.removeItem('recipeuser')
     navigate('/')
     }
   }
+  const [menuOpen,setMenuOpen] = useState(false)
   return (
     <nav>
     <Link to="/" className="title">
-      GIPHIYZ
+      Foodzy
     </Link>
     <div className="menu" onClick={()=>setMenuOpen(!menuOpen)}>
       <span></span>
@@ -22,16 +23,13 @@ const Nav = () => {
       <span></span>
     </div>
     <ul className={menuOpen ? "open" : ""}>
-      <li>
-        <NavLink to="/">GIFS</NavLink>
+    <li>
+        <NavLink to="/">Recipes</NavLink>
       </li>
       <li>
-        <NavLink to="/Stickers">Stickers</NavLink>
+        <NavLink to="/Favourites">Favourites</NavLink>
       </li>
-      <li>
-      <NavLink to="/Favourites">Favourites</NavLink>
-      </li>
-        {auth?<li><button className='but'>{auth.email}</button>
+      {auth?<li><button className='but'>{auth.email}</button>
         </li>:""}
       <li className='user'>  
         {auth ?<button onClick={Exit}>Logout</button>:<NavLink to="/Login">Login</NavLink>}

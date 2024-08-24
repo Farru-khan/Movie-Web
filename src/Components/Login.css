@@ -13,7 +13,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background: linear-gradient(rgb(4, 194, 131),rgb(250, 2, 43), rgb(94, 5, 197));
+  background: rgb(76, 0, 255)
 }
 .sec-1{
     height: 400px;
@@ -23,7 +23,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    background-color: white;
+    background-color: rgb(97, 37, 3);
     color: rgb(8, 167, 106);
 }
 .box{
@@ -39,11 +39,18 @@
     gap: 10px;
     height: 400px;
     width: 300px;
-    background-color: rgb(71, 14, 175);
+    background-color: white;
     color: rgb(10, 155, 107);
 }
 .sec-1 button{
     background-color: rgb(3, 175, 109);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+.sec-2 button{
+    background-color: rgb(3, 57, 175);
     color: white;
     padding: 10px 10px;
     border: none;
