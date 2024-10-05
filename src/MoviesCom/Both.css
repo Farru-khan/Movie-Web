@@ -1,0 +1,119 @@
+.sec{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+.s-1{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.nogen{
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background: none;
+}
+.image img{
+    height: 16rem;
+    width: 16rem;
+}
+.gen{
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: row;
+}
+.gen-1 {
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    background: rgb(47, 4, 167);
+}
+.gen button:hover{
+transition: 0.3s;
+background-color: rgb(224, 15, 25);
+}
+.detail{
+    width: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detail span{
+    color: rgb(224, 15, 25);
+}
+.cast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+}
+.carousel img{
+    height: 11rem;
+    width: 11rem;
+    object-fit: cover;
+}
+.c-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.pag{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.pagi{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    padding: 8px 8px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 0.4rem;
+}
+.video{
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.video button{
+    margin-top: 0.6rem;
+    border: none;
+    outline: none;
+    padding: 8px 8px;
+    width: 10rem;
+    background-color: rgb(54, 6, 228);
+    color: white;
+    border-radius: 3px;
+}
+.video button:hover{
+    transition: 0.2s;
+    background-color: red;
+}
+.video a{
+    text-decoration: none;
+    color: white;
+}
